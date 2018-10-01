@@ -1,0 +1,570 @@
+/*
+
+    Data de início:26/09
+    Responsável: William Tristão de Paula
+    Ultima modificação:26/09
+    objetivo: formatação do estilo do site
+
+*/
+
+/*FONTES*/
+@font-face {
+  src: url('../fonts/nunito/Nunito-Regular.ttf');
+  font-family: "Nunito";
+}
+
+/*LINKS*/
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/*ÁREA DO MENU*/
+body{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    margin:auto;
+    position: fixed;
+    background-color: #FFF;
+    z-index: 998;
+}
+
+.caixaMenuSuperior{
+    width:100%;
+    height: 60px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.caixaLogo{
+  width: 250px;
+  height: 50px;
+  margin-left: 60px;
+  float:left;
+}
+
+/*OPÇÕES MENU*/
+nav{
+  width: 300px;
+  height: 60px;
+  float:left;
+  margin-left: 30px;
+  display: flex;
+}
+
+.opcMenu{
+  width: 145px;
+  height: 60px;
+  float: left;
+  margin-left: 5px;
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 60px;
+  text-align: center;
+  color: #a6aebc;
+}
+
+.opcMenu:hover{/*quando o mouse passar por cima*/
+  color: #3c3d3f;
+}
+
+/*OPÇÕES MENU*/
+
+.caixaBarraPesquisa{
+  width: 400px;
+  height: 40px;
+  background-color: green;
+  float: left;
+  margin-top: 10px;
+  margin-left: 70px;
+}
+
+.caixaBtnPesquisa{
+  width: 120px;
+  height: 40px;
+  background-color: red;
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+#divBusca{
+  display: flex;
+  background-color:#fff;
+  border-radius:15px;
+  width:300px;
+  margin-top: 10px;
+  margin-left: 200px;
+  -webkit-box-shadow: 1px 2px 7px rgba(50, 50, 50, 0.77);
+  -moz-box-shadow:    1px 2px 7px rgba(50, 50, 50, 0.77);
+  box-shadow:         1px 2px 7px rgba(50, 50, 50, 0.77);
+}
+
+#txtBusca{
+  float:left;
+  background-color:transparent;
+  padding-left:5px;
+  font-style:italic;
+  font-size:18px;
+  border:none;
+  height:32px;
+  width:260px;
+}
+
+.espacoMenu{
+  width: 100%;
+  height: 60px;
+}
+
+/*FIM DA ÁREA DO MENU*/
+
+/*ÁREA FOOTER*/
+.caixaFooter{
+  width: 100%;
+  height: 200px;
+  background-color: #2a2a2b;
+  padding-top: 50px;
+}
+
+.caixaLogoFooter{
+  width: 200px;
+  height: 100px;
+  margin-left: 100px;
+  float: left;
+}
+
+.caixaMapSite{
+  width: 150px;
+  height: 150px;
+  margin-left: 100px;
+  float: left;
+}
+
+.caixaTituloMap{
+  width: 150px;
+  height: 35px;
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.caixaItensMap{
+  width: 150px;
+  height: 35px;
+  margin-top: 2px;
+  font-family: "Nunito";
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+.caixaRedesSociais{
+  width: 300px;
+  height: 130px;
+  float: left;
+  margin-left: 300px;
+}
+
+.caixaTituloFooter{
+  width: 300px;
+  height: 40px;
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 40px;
+  color: #fff;
+}
+
+.caixaFotosRede{
+  width: 300px;
+  height: 90px;
+}
+
+.caixaOpcRede{
+  width: 75px;
+  height: 75px;
+  float: left;
+  margin-left: 5px;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+
+/*ÁREA DO ARQUIVO HOME.php*/
+
+.banner{
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bannerBox{
+  height: 100vh;
+  width: 100%;
+}
+
+.txtBanner{
+  width: 500px;
+  height: 60px;
+  position: absolute;
+  margin-top: -400px;
+  text-align: center;
+  margin-left: 40%;
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 25px;
+  color: #FFF;
+  display: flex;
+}
+
+/*CONTEÚDO*/
+.imgFundoConteudo{
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.tituloConteudo{
+  width: 300px;
+  height: 50px;
+  text-align:center;
+  margin-left: 40%;
+  position: absolute;
+  margin-top: -60px;
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.caixaMaiorProdutos{
+    width: 100%;
+    min-height: 500px;
+    display: table;
+}
+
+.caixaProdutos{
+  width: 100%;
+  min-height: 380px;
+  padding-top: 20px;
+  display: table;
+}
+
+.caixaOpcProduto{
+  width: 240px;
+  height: 400px;
+  float: left;
+  margin-left: 155px;
+  margin-bottom: 50px;
+  background-color: #f7f8f9;
+  border-radius: 10px 10px 10px 10px;
+  -webkit-box-shadow: 1px 2px 5px rgba(50, 50, 50, 0.77);
+  -moz-box-shadow:    1px 2px 5px rgba(50, 50, 50, 0.77);
+  box-shadow:         1px 2px 5px rgba(50, 50, 50, 0.77);
+  transition: 1s;
+}
+
+.caixaOpcProduto:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.caixaImgProduto{
+  width: 240px;
+  height: 210px;
+}
+
+.caixaImgProduto img{
+  width: 180px;
+  height: 210px;
+  margin-left: 25px;
+}
+
+.nomeJogo{
+  width: 240px;
+  height:60px;
+  text-align: center;
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.caixaValorProduto{
+  width: 230px;
+  height: 40px;
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 20px;
+  padding-left: 10px;
+  margin-bottom: 40px;
+}
+
+.caixaDetalheProduto{
+  width: 240px;
+  height: 90px;
+}
+
+.caixaDetalhes{
+  width: 240px;
+  height: 50px;
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  color: #0a9b07;
+}
+
+/*Página Detalhes (DENTRO DA MODAL)*/
+.caixaNomeProdutoDetalhe{
+  width: 100%;
+  height: 30px;
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 23px;
+  text-align: center;
+  font-weight: 200px;
+  color: #fff;
+}
+
+.caixaPrincipalDetalhes{
+  width: 100%;
+  height: 400px;
+  margin-top: 60px;
+  display: table;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+.caixaFotoDetalhe{
+  width: 400px;
+  height: 500px;
+  margin-left: 160px;
+  float: left;
+}
+
+.caixaDetalhesProduto{
+  width: 600px;
+  height:400px;
+  display: table;
+  float: left;
+  margin-left: 80px;
+  border-radius: 10px 10px 10px 10px;
+  border: solid 1px #a5a5a0;
+}
+
+.txtValorDetalhe{
+  width: 100%;
+  height: 20px;
+  margin-top: 30px;
+  margin-left: 10px;
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+}
+
+.caixaValorDetalhe{
+  width: 100%;
+  height: 60px;
+  margin-left: 10px;
+  font-family: "Nunito";
+  font-style: italic;
+  font-size: 30px;
+  color: #3fd125;
+  font-weight: bold;
+}
+
+.caixaTxtDetalhe{
+  width: 100%;
+  height: 220px;
+  margin-top: 30px;
+  font-family: "Nunito";
+  font-size: 30px;
+  display: table;
+  text-align: justify;
+}
+
+.caixaPrincipalLugaresProduto{
+  width: 100%;
+  min-height: 200px;
+  margin-top: 50px;
+  display: table;
+}
+
+.tltLougaresProduto{
+  width: 500px;
+  height:50px;
+  margin-left: 160px;
+  font-family: "Nunito";
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.caixaPrincipalDadosLugar{
+  min-width: 502px;
+  height: 70px;
+  margin-left: 160px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: table;
+  background-color: #2e2f30;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.caixaPrincipalDadosLugar:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.localizacaçãoProduto{
+  min-width: 300px;
+  height: 70px;
+  float: left;
+  display: table;
+  font-family: "Nunito";
+  font-size: 22px;
+  text-align: center;
+  line-height: 70px;
+  color: #fff;
+}
+
+.estoqueProduto{
+  width: 200px;
+  height: 70px;
+  float: left;
+  font-family: "Nunito";
+  font-size: 22px;
+  text-align: center;
+  line-height: 70px;
+  font-weight: bold;
+  border-left: solid 2px #212020;
+  color: #fff
+}
+
+/*MODAL*/
+.modalContainer{
+	width:100%;
+	height:100%;
+	background: rgba(0, 0, 0, 0.4);
+	position:fixed;
+	display:none;
+  z-index: 999;
+}
+
+.modal{
+	width:1280px;
+  height:550px;
+	background-color:#434547;
+	margin:auto;
+  margin-top: 90px;
+  overflow: auto;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.fecharModal{
+  width: 30px;
+  height: 30px;
+  margin-left: 770px;
+  color: #af1f1f;
+}
+
+.closeModalBTN{
+  position: fixed;
+  margin-top: -15px;
+  margin-left: -15px;
+}
+
+/*SOBRE NÓS*/
+
+.tltSobreNos{
+  width: 88%;
+  height: 100px;
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 23px;
+  padding-left: 12%;
+  line-height: 100px;
+  font-weight: 200px;
+  background-color: #9b0606;
+  color: #fff;
+}
+
+.txtSobreNos{
+  width: 59%;
+  min-height: 200px;
+  margin-left: 20%;
+  margin-bottom: 20px;
+  border: 1px solid #9b0606;
+  border-radius: 10px ;
+  margin-top: -10px;
+  line-height: 80px;
+  padding-left: 1%;
+  font-family: "Nunito";
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.locaisDetalhes{
+  min-width: 500px;
+  height: 70px;
+  margin-left: 160px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #0e8fba;
+  border-radius: 10px 10px 10px 10px;
+  font-family: "Nunito";
+  font-size: 22px;
+  text-align: center;
+  line-height: 70px;
+  float: left;
+  display: table;
+}
+
+.locaisDetalhes:hover{
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.clear{
+  clear:both;/*Elemento para tirar as divs flutuantes dos lados, assim não atropelando nenhuma div*/
+}
+
+.caixaContato{
+  width: 100%;
+  height: 100px;
+  margin-top: 10px;
+
+}
+
+.imgContatos{
+  width: 500px;
+  height: 100px;
+  float: left;
+  margin-left: 150px;
+}
+
+.divisaoContato{
+  width: 300px;
+  height:50px;
+  font-family: "Nunito";
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+
+}
